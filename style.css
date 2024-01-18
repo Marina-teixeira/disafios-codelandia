@@ -1,0 +1,140 @@
+:root {
+    --azul: #00aeff;
+    --branco: #f9f9f9;
+    --cinza: #474747;
+    --cinza-claro: #ebe9ea;
+    --preto: #181818;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: var(--branco);
+    color: var(--preto);
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    height: 120px;
+    width: 100%;
+}
+
+header p {
+    background-color: var(--azul);
+    font-size: 16px;
+    font-weight: 500;
+    height: 50%;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+header h3 {
+    font-weight: 600;
+    font-size: 24px;
+    height: 50%;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+section {
+    align-items: flex-start;
+    background-attachment: fixed;
+    background-image: linear-gradient(#313131ac, #121212da), url(img/Air-Jordan-1-Retro-High-OG-Wmns-TWIST-Feminino\ 1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    min-height: 400px;
+    padding-left: 70px;
+    width: 100%;
+}
+
+section h2 {
+    color: var(--branco);
+    font-weight: 700;
+    font-size: 28px;
+}
+
+section p {
+    animation: aparecer 3s infinite alternate;
+    opacity: 0;
+    color: white;
+    background-size: 200% auto;
+    font-weight: 600;
+    font-size: 16px;
+    max-width: 600px;
+}
+
+.destaques {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    margin: 100px 40px;
+    text-align: center;
+}
+
+.destaques h3 {
+    font-weight: 600;
+    font-size: 28px;
+}
+
+.destaques p {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.imagens {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    margin: 20px;
+}
+
+.img {
+    align-items: center;
+    background-color: var(--cinza-claro);
+    display: flex;
+    height: 300px;
+    justify-content: center;
+    width: 300px;
+}
+
+.img:hover img {
+    transform: scale(1.1);
+    transition: .5s;
+}
+
+footer {
+    align-items: center;
+    background: var(--azul);
+    display: flex;
+    font-weight: 500;
+    font-size: 18px;
+    height: 60px;
+    justify-content: center;
+}
+
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
